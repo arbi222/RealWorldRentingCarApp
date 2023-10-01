@@ -448,3 +448,77 @@ body {
         width: 80%;
     }
 }
+
+@media (max-width: 500px) {
+    
+    .card-car{
+        width: 360px;
+    }
+
+    .card-car-img{
+        width: 360px;
+        height: 250px;
+    }
+
+    .car-name-price{
+        gap: 10px;
+    }
+
+    .car-info{
+        gap: 50px;
+    }
+
+    .main-login-container{
+        width: 350px;
+    }
+
+    .car-info-container{
+        width: 90%;
+    }
+
+    .input-images-section{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .input-images-section form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-images-section label{
+        font-size: 18px;
+    }
+
+    #enter-images{
+        margin-bottom: 15px;
+        width: 220px;
+    }
+
+    .img-rendered{
+        width: 300px;
+        height: 220px;
+        border: 3px solid var(--main-bg-color);
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .card-car{
+        width: 330px;
+    }
+
+    .card-car-img{
+        width: 330px;
+        height: 210px;
+    }
+
+    .car-name-price{
+        gap: 7px;
+    }
+
+    .car-info{
+        gap: 20px;
+    }
+}
