@@ -502,8 +502,8 @@ body {
         border: 3px solid var(--main-bg-color);
     }
 
-    .contact-page h1{
-    margin-bottom: 20px;
+    .contact-page{
+        margin: 100px auto;
     }
 }
 
