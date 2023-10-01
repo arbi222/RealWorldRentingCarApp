@@ -444,17 +444,17 @@ app.get("*", function(req,res){
   res.redirect("/");
 })
 
-// const backendUrl = "";
-// const job = new cron.CronJob('*/5 * * * *', function(){
-//   https.get(backendUrl, (res) => {
-//     if (res.statusCode === 200){
-//       console.log("server restarted")
-//     }
-//   }).on("error", (err) => {
-//       console.log("error");
-//   })
-// })
-// job.start();
+const backendUrl = "https://athlautorent.onrender.com";
+const job = new cron.CronJob('*/8 * * * *', function(){
+  https.get(backendUrl, (res) => {
+    if (res.statusCode === 200){
+      console.log("server restarted")
+    }
+  }).on("error", (err) => {
+      console.log("error");
+  })
+})
+job.start();
 
 const port = 3000;
 app.listen(process.env.PORT || port, function(){
