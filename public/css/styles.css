@@ -501,6 +501,10 @@ body {
         height: 220px;
         border: 3px solid var(--main-bg-color);
     }
+
+    .contact-page h1{
+    margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 400px) {
