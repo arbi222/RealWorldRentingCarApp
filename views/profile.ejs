@@ -1,0 +1,39 @@
+<%- include("partials/header") -%>
+
+<title><%= title %></title>
+
+<%- include("partials/navbar") -%>
+
+<div class="main-profile-container">
+
+    <h1 class="header">Profile</h1>
+
+    <form method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="input-field input-field-margin form-control" name="username" value="<%= user.username %>" required>
+        <label for="number">Mobile Number</label> 
+        <% if (visitor[0].mobile.length < 3) { %>
+            <input type="text" id="number" class="input-field input-field-margin form-control" name="number" value="+355">
+        <% } 
+        else { %>
+            <input type="text" id="number" class="input-field input-field-margin form-control" name="number" value="<%= visitor[0].mobile %>">
+        <% }  %>     
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-field input-field-margin form-control" name="email" value="<%= visitor[0].email %>">
+        <label for="facebook">Facebook Link</label>
+        <input type="text" id="facebook" class="input-field input-field-margin form-control" name="facebook" value="<%= visitor[0].facebook %>">
+        <label for="instagram">Instagram Link</label>
+        <input type="text" id="instagram" class="input-field input-field-margin form-control" name="instagram" value="<%= visitor[0].instagram %>">
+        <label for="tiktok">Tik-Tok link</label>
+        <input type="text" id="tiktok" class="input-field input-field-margin form-control" name="tiktok" value="<%= visitor[0].tiktok %>">
+        <label for="desc">Contact Description</label>
+        <input type="text" id="desc" class="input-field input-field-margin form-control" name="bio" value="<%= visitor[0].bio %>">
+
+        <div class="profile-btns">
+            <button class="btn btn-success save-btn" type="submit">Save</button>
+            <a href="/passchanger" class="btn btn-danger save-btn">Change Password</a>
+        </div>
+        
+    </form>
+    
+</div>

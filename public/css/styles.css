@@ -1,0 +1,450 @@
+:root {
+    --main-bg-color: lightblue;
+    --primary-grey: #E4E6EB;
+  }
+  
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: -apple-system, 'Helvetica Neue', Arial, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--main-bg-color);
+}
+
+.header{
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+/* navbar */
+.brand-font{
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+/* homepage */
+.no-cars-heading{
+    margin-top: 250px;
+}
+
+.first-section{
+    text-align: center;
+    padding: 20px;
+}
+
+.first-section hr{
+    width: 70%;
+    margin: 10px auto;
+}
+
+.second-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 90px;
+}
+
+.name-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-car{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(94, 93, 93);
+    clip-path: inset(-10px -10px -10px -10px);
+    transition: all .2s ease-in-out; 
+}
+
+.card-car:hover{
+    transform: scale(1.03);
+}
+
+.card-car-img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 450px;
+    height: 300px;
+}
+
+.car-name-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.price{
+    background-color: var(--primary-grey);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.price span{
+    color: royalblue;
+}
+
+.name{
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.car-info{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    border-top: 5px dashed var(--primary-grey);
+    padding: 30px;
+}
+
+.car-feature{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.car-feature img{
+    width: 20px;
+    height: 20px;
+}
+
+.third-section{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+/* car info */
+.car-info-container{
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(94, 93, 93);
+    clip-path: inset(-10px -10px -10px -10px);
+}
+
+.car-info-header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.images-rendered-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.img-rendered{
+    width: 450px;
+    height: 350px;
+    border: 5px solid var(--main-bg-color);
+    border-radius: 15px;
+}
+
+.input-images-section{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-images-section label{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pic-btn{
+    position: relative;
+}
+
+.del-pic-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* contact page */
+.contact-page{
+    width: 65%;
+    margin: 150px auto;
+}
+
+.contact-page h1{
+    margin-bottom: 50px;
+}
+
+.bio{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.link-contacts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    padding: 15px;
+    padding-bottom: 0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* profile page */
+.main-profile-container{
+    width: 40%;
+    margin: 70px auto;
+    padding: 25px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(94, 93, 93);
+    clip-path: inset(-10px -10px -10px -10px);
+}
+
+.main-profile-container h1{
+    margin-bottom: 25px;
+}
+
+.main-profile-container label{
+    font-weight: bold;
+}
+
+.input-field{
+    border-radius: 10px;
+    border: 1px solid #000;
+    height: 35px;
+}
+
+.input-field-margin{
+    margin-bottom: 10px;
+}
+
+.profile-btns{
+    display: flex;
+    margin: 30px auto 0;
+    justify-content: center;
+    gap: 40px;
+}
+
+.save-btn{
+    width: 200px;
+}
+
+/* change pass */
+.main-password-container{
+    width: 40%;
+    margin: 200px auto;
+    padding: 15px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(94, 93, 93);
+    clip-path: inset(-10px -10px -10px -10px);
+}
+
+.main-password-container form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main-password-container h1{
+    margin-bottom: 20px;
+}
+
+.main-password-container label{
+    font-weight: bold;
+}
+
+.change-pass-btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0;
+    width: 200px;
+}
+
+.eye-slash-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.eye-buttons{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.login-eye-button{
+    margin-top: 10px;
+}
+
+/* add car page */
+.add-cars-container{
+    width: 40%;
+    margin: 20px auto 40px;
+    padding: 25px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(94, 93, 93);
+    clip-path: inset(-10px -10px -10px -10px);
+}
+
+.add-cars-container label{
+    font-weight: bold;
+}
+
+.pricing{
+    display: flex;
+    gap: 5px;
+}
+
+.radio_button{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+.choices{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* edit car */
+.edit-car-container{
+    margin-bottom: 40px;
+}
+
+.edit-car-img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* login page */
+.main-login-container{
+    width: 500px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(94, 93, 93);
+    clip-path: inset(-10px -10px -10px -10px); 
+}
+
+.login-card{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-field-login{
+    text-align: center;
+}
+
+.login-btn{
+    border-radius: 10px;
+    height: 50px;
+}
+
+/* footer */
+#footer{
+    background-color: rgb(43, 48, 53);
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(94, 93, 93);
+    clip-path: inset(-10px -10px -10px -10px); 
+}
+
+@media (max-width: 1200px) {
+    .add-cars-container{
+        width: 65%;
+    }
+
+    .main-password-container{
+        width: 65%;
+    }
+
+    .main-profile-container{
+        width: 65%;
+    }
+
+    .car-info-container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    .add-cars-container{
+        width: 75%;
+    }
+
+    .main-password-container{
+        width: 75%;
+    }
+
+    .main-profile-container{
+        width: 75%;
+    }
+
+    .car-info-container{
+        width: 96%;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-password-container{
+        width: 80%;
+    }
+    
+    .main-profile-container{
+        width: 85%;
+    }
+
+    .main-login-container{
+        width: 400px;
+    }
+
+    .add-cars-container{
+        width: 80%;
+    }
+}

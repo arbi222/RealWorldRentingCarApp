@@ -1,0 +1,80 @@
+<%- include("partials/header") -%>
+
+<title><%= title %></title>
+
+<%- include("partials/navbar") -%>
+
+<div class="add-cars-container">
+
+    <h1 class="header">Add Car</h1>
+
+    <form enctype="multipart/form-data" method="post">
+        <label for="carname">Name</label>
+        <input type="text" id="carname" class="input-field input-field-margin form-control" placeholder="Name of the car" name="carname" required>
+
+        <label for="price">Price</label>
+        <div class="pricing">
+
+            <input type="number" id="price" class="input-field input-field-margin form-control" placeholder="Renting price" name="price" required>
+            
+            <div class="radio_button">
+                <div class="choices">
+                    <label for="day">Day</label><input name="pricetype" id="day" value="Day" type="radio" required>
+                </div>
+                <div class="choices">
+                    <label for="hour">Hour</label><input name="pricetype" id="hour" value="Hour" type="radio">
+                </div>
+            </div>
+        </div>
+
+        <label for="photo">Picture</label>
+        <input type="file" accept="image/*" required id="photo" class="input-field input-field-margin form-control" name="picture">
+
+        <label for="year">Year</label>
+        <input type="number" id="year" class="input-field input-field-margin form-control" placeholder="YYYY" name="year">
+
+        <div class="options">
+            <label>Fuel:</label>
+            <div class="radio_button">
+                <div class="choices">
+                    <label for="petrol">Petrol</label><input name="fuel" id="petrol" value="petrol" type="radio" required>
+                </div>
+                <div class="choices">
+                    <label for="diesel">Diesel</label><input name="fuel" id="diesel" value="diesel" type="radio">
+                </div>
+                <div class="choices">
+                    <label for="gas-petrol">Gas-Petrol</label><input name="fuel" id="gas-petrol" value="gas-Petrol" type="radio">
+                </div>
+                <div class="choices">
+                    <label for="electric">Electric</label><input name="fuel" id="electric" value="electric" type="radio">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="options">
+            <label for="gear">Gear:</label>
+            <div class="radio_button">
+                <div class="choices">
+                    <label for="automatic">Automatic</label><input name="gear" id="automatic" value="automatic" type="radio" required>
+                </div>
+                <div class="choices">
+                    <label for="manual">Manual</label><input name="gear" id="manual" value="manual" type="radio">
+                </div>
+            </div>
+        </div> 
+
+        <label for="passengers">Passengers</label>
+        <input type="number" id="passengers" class="input-field input-field-margin form-control" placeholder="e.g. 5 " name="passengers">
+
+        <label for="doors">Doors</label>
+        <input type="number" id="doors" class="input-field input-field-margin form-control" placeholder="e.g. 4 " name="doors">
+
+        <label for="engine">Engine capacity (cc)</label>
+        <input type="Number" id="engine" class="input-field input-field-margin form-control" placeholder="e.g. 1800" name="engine">
+   
+        <button class="btn btn-success change-pass-btn" type="submit">Save</button>
+        
+    </form>
+    
+</div>
